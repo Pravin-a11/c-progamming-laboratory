@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    long second;
+    int days,hour,minutes,total;
+    int nhour,nminutes,ndays;
+    scanf("%d",&days);
+    scanf("%d",&hour);
+    scanf("%d",&minutes);
+    scanf("%d",&second);
+    ndays=days*24*60*60;
+    nhour=hour*60*60;
+    nminutes=second*60;
+    total=ndays+second+nhour+nminutes;
+    printf("%d-seconds");
+    return 0;
+}

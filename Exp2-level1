@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    char ms,gen;
+    int age;
+    scanf("%c %c %d",&ms,&gen,&age);
+    if(ms== 'M')
+    {
+    printf("The Driver is insured");
+    }
+    else if(ms== 'U' && gen=='M' && age>30)
+    {
+    printf("The Driver is insured");
+    }
+    else if(ms== 'U' && gen=='F' && age>25)
+    {
+    printf("The Driver is insured");
+    }
+    else
+    {
+    printf("The Driver is not insured");
+    }
+    return 0;
+}

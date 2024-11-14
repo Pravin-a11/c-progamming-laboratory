@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    scanf("%f",&a);
+    printf("Enter the kilometer:\n");
+    b=a*1000;
+    c=a*100000;
+   {
+        printf("The distance in m:%.2f\n",b);
+    }
+    {
+        printf("The distance in cm:%.2f\n",c);
+    } 
+    return 0;
+}

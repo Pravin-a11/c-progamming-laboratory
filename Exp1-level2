@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int num,fact;
+    const float pi=3.14;
+    const float e=2.71;
+    scanf("%d",&num);
+    fact=sqrt(2*pi*num)*pow((num/e),num);
+    printf("%d",fact);
+    return 0;
+}

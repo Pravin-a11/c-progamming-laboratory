@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int basicpay;
+    float HRA,DA,gs;
+    printf("Enter the basicpay:");
+    scanf("%d",&basicpay);
+    if(basicpay>=0 && basicpay<=10000)
+    {
+        HRA=basicpay * 20/100.0;
+        DA=basicpay * 80/100.0;
+    }
+    else if(basicpay>10000 && basicpay<=20000)
+    {
+        HRA=basicpay * 25/100.0;
+        DA=basicpay * 90/100.0;
+    }
+    else if(basicpay>20000)
+    {
+        HRA=basicpay * 30/100.0;
+        DA=basicpay * 95/100.0;
+    }
+    else if(basicpay<0)
+    {
+      printf("invalid basicpay"); 
+    }
+    {
+        printf("HRA=%.2f\n",HRA);
+    }
+    {
+        printf("DA=%.2f\n",DA);
+    }
+    gs=basicpay+HRA+DA;
+    printf("\n gs=%.2f",gs);
+    return 0;
+}

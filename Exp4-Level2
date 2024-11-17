@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() 
+{
+    int arr1[] = {5, 7, 9, 3, 6, 2};
+    int arr2[] = {1, 2, 6, -1, 0, 9};
+     int max1 = arr1[0], min2 = arr2[0];
+    
+    for (int i = 1; i < 6; i++)
+    {
+        if (arr1[i] > max1) max1 = arr1[i];
+        if (arr2[i] < min2) min2 = arr2[i];
+    }
+    
+    printf("Max Element in The Array:%d\nMin Element in Second Array is%d\nThe Product of These Two is: %d\n", max1, min2, max1 * min2);
+    
+    return 0;
+}
+

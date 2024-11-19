@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() 
+{
+    char str[30],t;
+    int i,j;
+    scanf("%s",str);
+    printf("Enter The Input String:%s\n",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        for(j=i+1;str[j]!='\0';j++)
+        {
+            if(str[i]>str[j]) 
+            {
+                t=str[i];
+                str[i]=str[j];
+                str[j]=t;
+            }
+        }
+    }
+    {
+    printf("The Output String: %s\n",str);
+    }
+    return 0;
+}
+
+
